@@ -4,6 +4,7 @@ import io.ktor.server.application.*
 import io.ktor.server.engine.*
 import io.ktor.server.netty.*
 import io.ktor.server.routing.*
+import io.ktor.server.response.*
 import io.ktor.server.websocket.*
 import io.ktor.websocket.*
 import kotlinx.coroutines.channels.ClosedReceiveChannelException
@@ -80,7 +81,7 @@ class ConnectionManager {
     }
 
     suspend fun broadcast(message: String, senderId: String) {
-        connections.forEach { (id, session) {
+        connections.forEach { (id, session) ->
             try {
                 // Send to all clients including sender
                 session.send(Frame.Text(message))
