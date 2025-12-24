@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Example configuration file -->
+    <!-- Copy this to config.xml and add your server URL -->
+    <!-- NEVER commit config.xml with real server address! -->
+    
+    <!-- For Android Emulator connecting to localhost -->
+    <!-- <string name="websocket_url">ws://10.0.2.2:8080/ws</string> -->
+    
+    <!-- For physical device on same network -->
+    <!-- <string name="websocket_url">ws://192.168.1.XXX:8080/ws</string> -->
+    
+    <!-- For production with SSL -->
+    <!-- <string name="websocket_url">wss://your-domain.com/ws</string> -->
+    
+    <string name="websocket_url">ws://10.0.2.2:8080/ws</string>
+</resources>
