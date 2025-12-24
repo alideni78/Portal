@@ -1,0 +1,44 @@
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (do not commit)
+local.properties
+
+# Android Studio
+*.iml
+.idea/
+.DS_Store
+/captures
+.externalNativeBuild
+.cxx
+
+# Kotlin
+*.class
+*.log
+*.ctxt
+.mtj.tmp/
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Server configuration (IMPORTANT: Never commit)
+server/src/main/resources/application.conf
+server/src/main/resources/application.properties
+*.env
+
+# Credentials and secrets
+*credentials*
+*secret*
+*password*
+*.pem
+*.key
+*.crt
+
+# Android local config
+android-client/local.properties
+android-client/app/src/main/res/values/config.xml
